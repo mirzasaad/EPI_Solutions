@@ -2,11 +2,11 @@ from binary_tree_prototype import BinaryTreeNode
 
 def tree_travesal(root):
   if root:
-    print('Preorder: %s' % root.data)
+    # print('Preorder: %s' % root.data)
     tree_travesal(root.left)
     print('Inorder: %s' % root.data)
     tree_travesal(root.right)
-    print('Postorder: %s' % root.data)
+    # print('Postorder: %s' % root.data)
 #           -
 #           
 #        *    50
