@@ -7,6 +7,12 @@ def search_bst(tree, key):
     else (search_bst(tree.left, key) if key < tree.data
     else search_bst(tree.right, key))
   )
+
+def search(tree, key):
+  if not tree or key == tree.data:
+    return tree
+  return (search(tree.left, key) or search(tree.right, key))
+#        43
 #        43
 #    23     47
 #      37      53
@@ -27,3 +33,5 @@ assert tree.right is search_bst(tree, 47)
 assert tree.right.right is search_bst(tree, 53)
 assert tree.left.right.left is search_bst(tree, 29)
 assert search_bst(tree, 1000) is None
+
+assert search(tree, 53) is tree.right.right
