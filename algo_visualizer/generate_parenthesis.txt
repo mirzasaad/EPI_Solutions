@@ -1,0 +1,17 @@
+left = 2, right = 2, prefix = ''
+
+
+if (left > 0) {
+  f(left - 1, right, prefix + '(')
+}
+if (right > left) {
+  f(left, right - 1, prefix + ')')
+}
+
+if (right == 0) {
+  a1.push(prefix)
+}
+
+return prefix
+
+[]

@@ -1,0 +1,38 @@
+i = 0, result = [], n = 3
+
+if (i == n - 1) {
+  result.push(a1.slice().join(''))
+  result = a1.slice()
+  return a1.slice()
+}
+
+for (var j = i; j < n; j += 1) {
+  [a1[i], a1[j]] = [a1[j], a1[i]];
+  f(i + 1, result, n)
+  a1.swap(i, j)
+}
+
+['a','b','c']
+
+Array.prototype.swap = function (x,y) {
+  var b = this[x];
+  this[x] = this[y];
+  this[y] = b;
+  return this;
+}
+
+
+
+i = 0, check ='abc'
+if (i == a1.length - 1) {
+  return a1.slice()
+}
+
+for (var j = i; j < a1.length; j += 1) {
+  [a1[i], a1[j]] = [a1[j], a1[i]];
+  f(i + 1, a1.slice().join(''))
+  a1.swap(i, j)
+}
+
+['a','b','c']
+  

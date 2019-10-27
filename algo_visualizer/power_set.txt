@@ -1,0 +1,10 @@
+to_be_selected = 0, selected_so_far = ''
+
+if (to_be_selected === a1.length) {
+    console.log(selected_so_far)
+    return selected_so_far
+  }
+f(to_be_selected + 1, selected_so_far)
+f(to_be_selected + 1, selected_so_far + [a1[to_be_selected]])
+
+['a','b','c']

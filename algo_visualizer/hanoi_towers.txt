@@ -1,0 +1,11 @@
+num_rings_to_move = 3,  from_peg = 0, to_peg = 1, use_peg = 2 
+
+if (num_rings_to_move > 0) {
+      f(num_rings_to_move - 1, from_peg, use_peg, to_peg)
+      a1[to_peg].push(a1[from_peg].pop())
+      console.log(from_peg, to_peg)
+      console.log(a1)
+      f(num_rings_to_move - 1, use_peg, to_peg, from_peg)
+}
+
+[[3,2,1], [], []]

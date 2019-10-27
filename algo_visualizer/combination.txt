@@ -1,0 +1,13 @@
+offset = 1, partial_combination = [], k = 2, n = 5
+
+if (partial_combination.length == k) {
+    console.log(partial_combination)
+    return partial_combination
+  }
+
+  var num_remaining = k - partial_combination.length
+  var i = offset
+  while (i <= n && num_remaining <= n - i + 1) {
+    f(i + 1, partial_combination.concat(i), k, n)
+    i += 1
+  }
