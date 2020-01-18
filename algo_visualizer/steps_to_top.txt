@@ -1,0 +1,18 @@
+h = 4, k = 2
+
+if (h <= 1) {
+    return 1
+}
+
+let sum = x => x.reduce((a, b) => a + b, 0)
+
+if (a1[h] === 0) {
+let total = []
+for (let i = 1; i < Math.min(k, h) + 1; i += 1) {
+    total.push(f(h - i, k))
+}
+    a1[h] = sum(total)
+}
+return a1[h]
+
+Array(5).fill(0)
