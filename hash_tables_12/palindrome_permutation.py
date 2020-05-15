@@ -5,3 +5,4 @@ def can_perform_palindrome(s):
   return sum(v % 2 for v in Counter(s).values()) <= 1
 
 assert can_perform_palindrome('abbabba') == True
+print(Counter('abbabba').values())

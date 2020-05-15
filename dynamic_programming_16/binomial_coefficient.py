@@ -21,4 +21,4 @@ def pascal(n):
   for k in range(n):
     line.append(line[k] * (n - k)/(k + 1))
   return line
-print(pascal(6))
+print(pascal(2))
